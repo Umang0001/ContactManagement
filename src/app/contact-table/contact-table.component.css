@@ -1,0 +1,27 @@
+td,th{
+    text-align: center;
+}
+.heading{
+    color: gray;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.inp{ 
+    /* margin: auto; */
+    width: 300px;
+    margin-right: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 20px; 
+}   
+.searchBox{
+    padding-left:  10px;
+    padding-right:  70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

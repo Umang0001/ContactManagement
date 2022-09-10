@@ -1,0 +1,18 @@
+<h1>Create a Profile</h1>
+
+<p *ngIf="invalid">
+    <ngb-alert [dismissible]="false">
+      <strong>Invalid!</strong> Please enter valid credentials.
+    </ngb-alert>
+  </p>
+
+<div class="form">
+    <form [formGroup]="registerForm" (ngSubmit)="handleRegister()" >
+        <input type="text" placeholder="Name" formControlName="name">
+        <input type="text" placeholder="Password" formControlName="password">
+        <input type="number" placeholder="Phone" formControlName="phone">
+        Birthday :
+        <input id="dob" type="date" placeholder="" formControlName="birthday">
+        <button class="btn btn-primary btn-sm">Register</button>
+    </form>
+</div>

@@ -1,0 +1,24 @@
+<h1>Login</h1>
+<div class="spinner-border text-secondary " role="status" *ngIf="loading">
+</div>
+<div class="loginForm">
+    <form [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+
+        <input type="text" placeholder="Enter User Id" formControlName="username"> 
+        <input type="password" placeholder="Enter Password" formControlName="password">
+        <button class="btn btn-primary btn-sm">Login</button>
+    </form>
+</div>
+<p *ngIf="invalid">
+    <ngb-alert [dismissible]="false">
+      <strong>Invalid!</strong> Please enter valid credentials.
+    </ngb-alert>
+  </p>
+<!-- <p *ngIf="invalid" class="text-danger">Invalid login</p> -->
+
+
+
+
+<div class="registerBtn">
+    <a routerLink="/register"><button class="btn btn-primary btn-sm">Create Profile</button></a>
+</div>

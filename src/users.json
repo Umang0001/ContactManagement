@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sam",
+      "password": "123",
+      "phone": 8387485785,
+      "birthday": "2022-09-21",
+      "contacts": [
+        {
+          "name": "umang",
+          "phone": 2498292859
+        },
+        {
+          "name": "bhagyashri",
+          "phone": 9987006702
+        },
+        {
+          "name": "sonal",
+          "phone": 9359757545
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Amina",
+      "password": "123",
+      "phone": 5575857457,
+      "birthday": "2022-09-30",
+      "contacts": []
+    },
+    {
+      "id": 3,
+      "name": "bhagyashri",
+      "password": "123",
+      "phone": 9987006702,
+      "birthday": "2022-09-30",
+      "contacts": []
+    },
+    {
+      "id": 4,
+      "name": "fravash",
+      "password": "123",
+      "phone": 9987006702,
+      "birthday": "2022-10-05",
+      "contacts": []
+    }
+  ]
+}

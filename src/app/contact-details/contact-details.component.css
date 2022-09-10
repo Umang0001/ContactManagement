@@ -1,0 +1,9 @@
+.heading{
+    color: gray;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.content{
+    font-weight: bold;
+}

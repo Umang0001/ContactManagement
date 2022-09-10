@@ -1,0 +1,36 @@
+.loginForm{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 12px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.loginForm input{
+    width: 300px;
+    margin-right: 30px;
+    border: 1px solid gray;
+}
+
+.loginForm input::placeholder{
+    font-size: 12px;
+    color: gray;
+}
+
+.registerBtn,p{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.spinner-border{
+    display: block !important;
+    margin: auto !important;
+}

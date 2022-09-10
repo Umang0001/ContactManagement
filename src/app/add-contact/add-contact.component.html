@@ -1,0 +1,10 @@
+<h3 *ngIf="display" class="heading">Add Contact</h3>
+<ngb-alert *ngIf="!display" class="bg-success text-light" >Contact added successfully !!!</ngb-alert>
+
+<div class="form">
+    <form [formGroup]="addContact" (ngSubmit)="handleSubmit()" >
+        <input type="text" placeholder="Name" formControlName="name">
+        <input type="number" placeholder="Phone" formControlName="phone">
+        <button class="btn btn-success btn-sm">Add</button>
+    </form>
+</div>

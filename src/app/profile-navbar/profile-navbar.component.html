@@ -1,0 +1,17 @@
+<div class="links">
+    <a routerLink="dashboard" class="text-primary" >Dashboard</a>
+    <a routerLink="add-contact" class="text-primary">Add Contacts</a>
+    <a routerLink="all-contacts" class="text-primary">Show all contacts</a>
+    <a >
+        <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Settings</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <a routerLink="update-password"><button ngbDropdownItem>Change Password</button></a>
+            <a><button ngbDropdownItem (click)="handleDelete()">Delete Profile</button></a>
+            <button ngbDropdownItem (click)="handleLogout()">Logout</button>
+          </div>
+        </div>
+    </div>
+</a>
+</div>

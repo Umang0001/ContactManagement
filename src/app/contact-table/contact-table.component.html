@@ -1,0 +1,40 @@
+<h3 class="heading">All Contacts</h3>
+<div class="searchBox">
+<input type="search" class="inp" placeholder="search contact" #name (input)="filterContacts(name.value)">
+<div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Sort</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="text-center " ngbDropdownItem (click)="sortAtoZ()">A-Z</button>
+          <button class="text-center" ngbDropdownItem (click)="sortZtoA()">Z-A</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<p *ngIf="filteredArr.length===0">
+    <ngb-alert [dismissible]="false">
+      <strong>Sorry!</strong> no contacts to display.
+    </ngb-alert>
+  </p>
+<table class="table table-striped" *ngIf="filteredArr.length>0">
+    <thead>
+
+        <tr>
+            <!-- <th>Serial No.</th> -->
+            <th>Name</th>
+            <th>Contact Number</th>
+            <th>X</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let x of filteredArr">
+            <!-- <td>{{x.index}}</td> -->
+            <td>{{x.name | titlecase}}</td>
+            <td>{{x.phone}}</td>
+            <td><button class="btn btn-danger btn-sm" (click)="handleDelete(x.phone)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
