@@ -4,8 +4,21 @@ a{
     margin: 0px 6px;
     cursor: pointer;
     display: inline-block;
+    /* border: 1px solid black; */
 }
 button{
     font-size: 13px;
 
+}
+
+@media screen and (max-width:700px ){
+    a{
+        margin: 0px 3px;
+    }
+    .links{
+        margin: 0;
+        padding: 0;
+    }
+
+    
 }

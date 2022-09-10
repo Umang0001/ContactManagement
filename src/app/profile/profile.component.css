@@ -22,3 +22,30 @@
     /* border: 1px solid black; */
     width: 70%;
 }
+
+@media screen and (max-width: 700px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .left{
+        border-right: none;
+        height: auto;
+        width: 100%;
+    }
+    .right{
+        
+        margin-top: 30px;
+        padding: 0;
+        width: 100%;
+    }
+    .navbar{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        margin:  0px;
+    }
+  }

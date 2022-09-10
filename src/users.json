@@ -43,7 +43,12 @@
       "password": "123",
       "phone": 9987006702,
       "birthday": "2022-10-05",
-      "contacts": []
+      "contacts": [
+        {
+          "name": "Shubham",
+          "phone": 28194713
+        }
+      ]
     }
   ]
 }
